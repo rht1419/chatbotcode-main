@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #FEFCF8; /* warm off-white */
+    --color-foreground: #2D3436; /* deep charcoal */
+    --color-border: rgba(45, 52, 54, 0.08); /* subtle warm gray */
+    --color-input: #F7F5F1; /* subtle warm gray */
+    --color-ring: #E85A4F; /* warm coral */
+    
+    /* Card Colors */
+    --color-card: #F7F5F1; /* subtle warm gray */
+    --color-card-foreground: #2D3436; /* deep charcoal */
+    
+    /* Popover Colors */
+    --color-popover: #FEFCF8; /* warm off-white */
+    --color-popover-foreground: #2D3436; /* deep charcoal */
+    
+    /* Muted Colors */
+    --color-muted: #F7F5F1; /* subtle warm gray */
+    --color-muted-foreground: #636E72; /* medium gray */
+    
+    /* Primary Colors */
+    --color-primary: #FF0F63; /* bright pink/magenta */
+    --color-primary-foreground: #FEFCF8; /* warm off-white */
+    
+    /* Secondary Colors */
+    --color-secondary: #7FB069; /* sage green */
+    --color-secondary-foreground: #FEFCF8; /* warm off-white */
+    
+    /* Destructive Colors */
+    --color-destructive: #E17055; /* muted red-orange */
+    --color-destructive-foreground: #FEFCF8; /* warm off-white */
+    
+    /* Accent Colors */
+    --color-accent: #FFB84D; /* golden amber */
+    --color-accent-foreground: #2D3436; /* deep charcoal */
+    
+    /* Success Colors */
+    --color-success: #00B894; /* fresh teal */
+    --color-success-foreground: #FEFCF8; /* warm off-white */
+    
+    /* Warning Colors */
+    --color-warning: #FDCB6E; /* gentle yellow-orange */
+    --color-warning-foreground: #2D3436; /* deep charcoal */
+    
+    /* Error Colors */
+    --color-error: #E17055; /* muted red-orange */
+    --color-error-foreground: #FEFCF8; /* warm off-white */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .animate-breathing {
+    animation: breathing 2s ease-in-out infinite;
+  }
+  
+  @keyframes breathing {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.02); opacity: 0.9; }
+  }
+  
+  .animate-pulse-gentle {
+    animation: pulse-gentle 2s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+  
+  @keyframes pulse-gentle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  .transition-smooth {
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  
+  .shadow-warm {
+    box-shadow: 0 2px 8px rgba(229, 90, 79, 0.08);
+  }
+  
+  .shadow-warm-lg {
+    box-shadow: 0 8px 16px rgba(229, 90, 79, 0.08);
+  }
+  
+  .shadow-subtle {
+    box-shadow: 0 2px 4px rgba(45, 52, 54, 0.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-breathing,
+  .animate-pulse-gentle {
+    animation: none;
+  }
+  
+  .transition-smooth {
+    transition: none;
+  }
+}
