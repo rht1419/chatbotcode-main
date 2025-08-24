@@ -45,7 +45,7 @@ const MessageInput = ({ onSendMessage, disabled = false }) => {
 
   const handleTopicClick = (topic) => {
     const topicMessages = {
-      alcohol: "How does alcohol affect my body?",
+      creator: "Who's your creator?",
       diet: "What should I eat for better health?",
       exercise: "How much exercise do I need daily?",
       sleep: "How can I improve my sleep quality?",
