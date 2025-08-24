@@ -116,7 +116,7 @@ ${welcomeLength}`;
         kidney: "Greetings, friend. 🧘 Your kidneys here - the wise filters of your body. I maintain balance and harmony within you.",
         brain: "Hello there! 🧠 Your brain speaking - the command center of your entire being! I'm excited to help you optimize your cognitive health, mental clarity, and overall neurological wellness. Let's unlock your mental potential together!"
       },
-      lifestyle: "Hello! I'm your comprehensive lifestyle and wellness coach, here to help you build sustainable healthy habits and optimize your wellbeing. I can provide detailed guidance on nutrition, fitness, sleep, stress management, mental health, and creating lasting lifestyle changes. Whether you're looking to improve your energy, enhance your fitness, develop better eating habits, or create a more balanced life, I'm here to offer personalized, evidence-based advice tailored to your unique needs and goals. What aspect of your wellness journey would you like to focus on today?"
+      lifestyle: "Hello! I'm your comprehensive lifestyle and wellness coach, *Built for Makeathon Competition* By Alina Izma.Z and her buddy, this chatbot is here to help you build sustainable healthy habits and optimize your wellbeing. I can provide detailed guidance on nutrition, fitness, sleep, stress management, mental health, and creating lasting lifestyle changes. Whether you're looking to improve your energy, enhance your fitness, develop better eating habits, or create a more balanced life, I'm here to offer personalized, evidence-based advice tailored to your unique needs and goals. What aspect of your wellness journey would you like to focus on today?"
     };
     
     return mode === 'organs' 
