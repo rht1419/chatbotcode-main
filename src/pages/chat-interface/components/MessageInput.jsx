@@ -7,7 +7,7 @@ const MessageInput = ({ onSendMessage, disabled = false }) => {
   const textareaRef = useRef(null);
 
   const healthTopics = [
-    { id: 'creator', label: "Who's your creator?", icon: 'Wine' },
+    { id: 'alcohol', label: '🍷 Alcohol', icon: 'Wine' },
     { id: 'diet', label: '🥗 Diet', icon: 'Apple' },
     { id: 'exercise', label: '💪 Exercise', icon: 'Dumbbell' },
     { id: 'sleep', label: '😴 Sleep', icon: 'Moon' },
@@ -45,7 +45,7 @@ const MessageInput = ({ onSendMessage, disabled = false }) => {
 
   const handleTopicClick = (topic) => {
     const topicMessages = {
-      creator: "Who's your creator?",
+      alcohol: "How does alcohol affect my body?",
       diet: "What should I eat for better health?",
       exercise: "How much exercise do I need daily?",
       sleep: "How can I improve my sleep quality?",
