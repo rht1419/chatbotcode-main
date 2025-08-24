@@ -97,7 +97,7 @@ const ChatInterface = () => {
       // Fallback error message
       const errorMessage = {
         id: Date.now() + 1,
-        content: "I\'m having trouble responding right now. Please try again in a moment!",
+        content: "I\'m having trouble responding right now. Limited requests available, Please try again later!",
         isUser: false,
         timestamp: new Date(),
         isEducational: false
