@@ -7,7 +7,7 @@ const MessageInput = ({ onSendMessage, disabled = false }) => {
   const textareaRef = useRef(null);
 
   const healthTopics = [
-    { id: 'alcohol', label: '🍷 Alcohol', icon: 'Wine' },
+    { id: 'creator', label: "Who's your creator?", icon: 'Wine' },
     { id: 'diet', label: '🥗 Diet', icon: 'Apple' },
     { id: 'exercise', label: '💪 Exercise', icon: 'Dumbbell' },
     { id: 'sleep', label: '😴 Sleep', icon: 'Moon' },
