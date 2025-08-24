@@ -86,7 +86,7 @@ const MessageInput = ({ onSendMessage, disabled = false }) => {
             value={message}
             onChange={handleTextareaChange}
             onKeyPress={handleKeyPress}
-            placeholder="Ask about your health... (Press Enter to send, Shift+Enter for new line)"
+            placeholder="Ask about your health... (Press Enter to send)"
             disabled={disabled}
             className="
               w-full min-h-[44px] max-h-[120px] px-4 py-3 pr-12
