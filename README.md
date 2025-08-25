@@ -103,5 +103,6 @@ npm run build
 - Built with help of Rocket.new and Builder.io
 - Powered by React and Vite
 - Styled with Tailwind CSS
+- Used Gemini 2.5 Pro API
 
 Built By Alina Izma.Z
